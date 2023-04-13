@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <br><br>
+    <div style="text-align:center;">
+        <h1><strong>Customer Details</strong></h1>
+    </div>
+    <br><br><br>
+    <style>
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    </head>
+
+
+    <div class="center">
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="textInput1" placeholder="Customer ID">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="textInput2" placeholder="Account Number">
+            </div>
+            <div class="search-container">
+                <button class="btn btn-primary" type="button"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </form>
+        <br><br>
+        <form>
+            <div class="form-group">
+
+                <input type="text" class="form-control" id="name" placeholder="Customer ID" readonly>
+            </div>
+            <div class="form-group">
+
+                <input type="text" class="form-control" id="address" placeholder="Name" readonly>
+            </div>
+            <div class="form-group">
+
+                <input type="text" class="form-control" id="phone" placeholder="T.P" readonly>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <form>
+
+                </form>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>Accounts</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
