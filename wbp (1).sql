@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 10, 2023 at 07:28 PM
+-- Generation Time: Jun 13, 2023 at 12:44 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -88,7 +88,8 @@ INSERT INTO `customer` (`customer_id`, `customer_name`, `account_no`, `category_
 ('005', 'sunil', NULL, NULL, 0, 'kegalle', 71452356, '2023-06-07 18:14:05'),
 ('006', 'chamodya', NULL, NULL, 0, 'mathale', 714256883, '2023-06-08 03:19:47'),
 ('007', 'manoj', NULL, NULL, 0, 'awissawella', 714523589, '2023-06-10 07:21:50'),
-('008', 'udana', NULL, NULL, 0, 'kandy', 773310772, '2023-06-10 08:07:19');
+('008', 'udana', NULL, NULL, 0, 'kandy', 773310772, '2023-06-10 08:07:19'),
+('009', 'udana', NULL, NULL, 0, 'kandy', 714523698, '2023-06-13 03:21:52');
 
 -- --------------------------------------------------------
 
@@ -115,7 +116,8 @@ CREATE TABLE `usr` (
   `phone_no` varchar(15) DEFAULT NULL,
   `user_role_id` varchar(15) DEFAULT NULL,
   `created_at` date DEFAULT NULL,
-  `is_active` tinyint(1) DEFAULT NULL
+  `is_active` tinyint(1) DEFAULT NULL,
+  `role_name` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
